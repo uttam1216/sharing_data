@@ -46,7 +46,7 @@ app.config.update({
         plugins=[MarshmallowPlugin()],
         openapi_version='2.0.0',
         base_url='/',
-        host='localhost:5002/',
+        host='localhost:5001/',
         schemes='[http]'
     ),
     'APISPEC_SWAGGER_URL': '/swagger/',  # URI to access API Doc JSON
@@ -80,7 +80,7 @@ class uploadTripFile(Schema):
 
 
 ##### START API ####
-def run(host='0.0.0.0', port=5002, debug=True):
+def run(host='0.0.0.0', port=5001, debug=True):
     app.run(host=host, port=port, debug=debug)
 
 
